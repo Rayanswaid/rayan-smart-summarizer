@@ -1,25 +1,31 @@
-# AI Text Summarizer (Multilingual)
 
-This is a Streamlit-based web app that summarizes English and Arabic text using AI models.
+# Rayan Smart Summarizer
 
-## 🔍 Features
+A smart web app that summarizes Arabic and English text using HuggingFace models and Streamlit.  
+It auto-detects the language and generates a concise summary.
 
-- 🧠 Uses BART for English and mT5 for Arabic
-- 🌐 Auto language detection using `langdetect`
-- 📥 Download summarized text as `.txt`
-- 🧩 Simple, clean UI powered by Streamlit
+## Features
+- 🔁 Multilingual support (Arabic + English)
+- 🤖 HuggingFace mT5 model for summarization
+- 🌐 Clean Streamlit web UI
+- 💾 Summary download as `.txt`
 
-## 🚀 How to Run
+## How to Run Locally
 
+1. Clone the repository:
+```bash
+git clone https://github.com/Rayanswaid/rayan-smart-summarizer.git
+cd rayan-smart-summarizer
+```
+
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+3. Run the app:
+```bash
 streamlit run app.py
 ```
 
-## 🧰 Models Used
-
-- English: `facebook/bart-large-cnn`
-- Arabic: `csebuetnlp/mT5_multilingual_XLSum`
-
-## 👨‍💻 Built by:
-Rayan Swaid
+Enjoy smart summarization! 🚀
