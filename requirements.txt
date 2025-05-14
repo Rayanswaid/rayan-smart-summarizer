@@ -2,4 +2,4 @@ streamlit
 transformers
 torch
 sentencepiece
-langdetect
+huggingface_hub
