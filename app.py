@@ -25,7 +25,7 @@ if st.button("تلخيص"):
                 model = AutoModelForSeq2SeqLM.from_pretrained(model_name, cache_dir="./model_cache")
 
             summarizer = pipeline("summarization", model=model, tokenizer=tokenizer, device=-1)
-            summary = summarizer(user_input, max_length=120, min_length=30, do_sample=False)
+            summary = summarizer(user_input, max_length=160, min_length=50, do_sample=False)
             summary_text = summary[0]["summary_text"]
 
             st.success("✅ الملخص:")
